@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="This Website Helps Jehovahs Witneses Record their Field Service Hours and makes it Easy to report them to their service overseer">
+	<meta name="keywords" content="Jehovahs Witneses, Jehovah, Service, Report, Field Service">
+	<meta name="author" content="Denny Sesay">
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/7264fac0c5.js" crossorigin="anonymous"></script>
+	<title>JSR</title>
+</head>
+<body>
+	<div>
+
+    <nav class="sidenav" id="myTopnav">
+      <a href="index.html" >Home</a>
+			<a href="serviceReport.html" class="active">jw service report</a>
+			<a href="mailto:fieldservicereportcontactme@gmail.com">Contact</a>
+			<!-- <a href="https://paypal.me/jwfieldservicereport?locale.x=de_DE">Donate</a> -->
+      <div class="dropdown">
+        <a class="dropbtn">jw
+          <i class="fas fa-caret-down"></i>
+        </a>
+        <div class="dropdown-content">
+          <a href="https://www.jw.org" target="_blank" rel="noreferrer">jw.org</a>
+					<a href="https://wol.jw.org/en/" target="_blank" rel="noreferrer">jw library</a>
+					<a href="https://my.jw.org/home/en/login" target="_blank" rel="noreferrer">jw login</a>
+        </div>
+      </div>
+			
+      <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> -->
+    </nav>
+
+		<main class="container">
+
+		<h1>Field Service Report</h1>
+
+			<form>
+				<p>Hours:</p>
+				<label for="hours"><i class="fas fa-hourglass-start"></i></label>
+				<input type="number" name="hours" value="0" placeholder="Hours" class="Hours">
+				<br>
+				<p>Minutes:</p>
+				<label for="minutes"><i class="fas fa-hourglass-end"></i></label>
+				<input type="number" name="minutes" value="0" placeholder="Minutes" class="Minutes">
+				<br>
+				<p>Placements:</p>
+				<label for="Placements"><i class="far fa-newspaper"></i></label>
+				<input type="number" name="Placements"  value="0" placeholder="Placements" class="Placements">
+				<br>
+				<p>Books:</p>
+				<label for="Books"><i class="fas fa-book"></i></label>
+				<input type="number" name="Books" value="0" placeholder="Books" class="Books">
+				<br>
+				<p>Videos:</p>
+				<label for="Videos"><i class="fas fa-tablet-alt"></i></label>
+				<input type="number" name="Videos" value="0" placeholder="Videos" class="Videos">
+				<br>
+				<p>Return Visit:</p>
+				<label for="returnVisit"><i class="fas fa-person-booth"></i></label>
+				<input type="number" name="returnVisit" value="0" placeholder="Return Visit" class="returnVisit">
+				<br>
+				<p>Bible Studies:</p>
+				<label for="bibleStudies"><i class="fas fa-user-tie"></i></label>
+				<input type="number" name="bibleStudies" value="0" placeholder="Bible Studies" class="bibleStudies">
+				<br><br>
+				<label for="Notes"><i class="fas fa-pen"></i></label>
+				<textarea name="Notes" placeholder="Comment" class="Comment"></textarea>
+				<br>
+				<ul class="button-container">
+					<li class="lis"><input type="submit" class="publish"></li>
+        	<br><br>
+        	<li class="lis"><input type="reset" class="reset"></li>
+					<br><br>
+				</ul>
+			</form>		
+
+			<!-- <div class="saved">
+			</div> -->
+
+			<div class="output">
+
+			</div>
+
+			<div class="alerty">
+
+			</div>
+
+			</main>
+
+			<footer class="container foot">
+				&copy; Denny Sesay
+				<a href="https://github.com/DennySesay/DennySesay.github.io" target="_blank" rel="noopener noreferrer"><i class="fab fa-github footi"></i></a>
+			</footer>
+
+			
+
+			
+
+	<script src="app.js"></script>
+</body>
+</html>
