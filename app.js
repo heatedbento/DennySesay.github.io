@@ -22,9 +22,9 @@ let load1 = false;
 
 const storedItems = () => {
 	outputDiv.innerHTML = `
-	<ul class="sup remove" contenteditable="true">
+	<a class="mail" href="mailto:"><i class="far fa-envelope"></i></a>
+	<ul class="sup" contenteditable="true">
 		<hr>
-		<br>
 		<li><p value="0">Hours: ${localStorage.getItem('time1')}</p></li>
 		<li><p value="0">Minutes: ${localStorage.getItem('time2')}</p></li>
 		<li><p value="0">Placements: ${localStorage.getItem('givenOut')}</p></li>
@@ -67,9 +67,9 @@ const main = () => {
 	// html for stored data
 
 	outputDiv.innerHTML = `
+	<a class="mail" href="mailto:"><i class="far fa-envelope"></i></a>
 	<ul class="sup" contenteditable="false">
 		<hr>
-		<br>
 		<li><p value="0">Hours: ${localStorage.getItem('time1')}</p></li>
 		<li><p value="0">Minutes: ${localStorage.getItem('time2')}</p></li>
 		<li><p value="0">Placements: ${localStorage.getItem('givenOut')}</p></li>
@@ -92,7 +92,12 @@ submit.addEventListener('click', e => {
 });
 
 addEventListener('load', () => {
-	
+	load1 = true; 
+
+	if(load1) {
+		console.log('hello world');
+		storedItems();
+	};
 });
 
 // reset
@@ -101,18 +106,16 @@ btnReset.addEventListener('click', () => {
 	window.localStorage.clear();
 
 		outputDiv.innerHTML = `
-		<a class="mail" href="mailto:"><i class="far fa-envelope"></i></a>
 		<ul class="sup" contenteditable="false">
 			<hr>
-			<br>
-			<li><p value="0">Hours: ${localStorage.getItem('time1')}</p></li>
-			<li><p value="0">Minutes: ${localStorage.getItem('time2')}</p></li>
-			<li><p value="0">Placements: ${localStorage.getItem('givenOut')}</p></li>
-			<li><p value="0">Books: ${localStorage.getItem('literature')}</p></li>
-			<li><p value="0">Videos: ${localStorage.getItem('videografy')}</p></li>
-			<li><p value="0">Return Visits: ${localStorage.getItem('visits')}</p></li>
-			<li><p value="0">Bible Studies: ${localStorage.getItem('studies')}</p></li>
-			<li><p value="nothing">${localStorage.getItem('note')}</p></li>
+			<li><p value="0">Hours: 0</p></li>
+			<li><p value="0">Minutes: 0</p></li>
+			<li><p value="0">Placements: 0</p></li>
+			<li><p value="0">Books: 0</p></li>
+			<li><p value="0">Videos: 0</p></li>
+			<li><p value="0">Return Visits: 0</p></li>
+			<li><p value="0">Bible Studies: 0</p></li>
+			<li><p value="nothing"</p></li>
 	</ul>
 	`;
 
