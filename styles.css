@@ -147,7 +147,7 @@ ul {
 
 hr {
   display: block;
-  margin-top: 70px;
+  margin-top: 60px;
   margin-bottom: 0;
   position: relative;
   right: 35px;
@@ -323,8 +323,8 @@ span {
 
 .mail {
   position: relative;
-  bottom: 100px;
-  right: 1000px;
+  top: 100px;
+  left: 550px;
 }
 
 .active {
